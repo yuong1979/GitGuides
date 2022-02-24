@@ -1,0 +1,78 @@
+
+# to initialize my git
+git init
+
+#adding all files to the staging area (to be committed) and to track
+git add .
+
+#adding one file to the staging area (to be committed) and to track
+git add FILENAME
+
+#to remove all files from the staging area
+
+#to remove one files from the staging area
+git rm --cached FILENAME
+
+#to commit
+git commit -m "NAME OF THE COMMIT"
+
+# to check my status
+git status
+
+#remove all files from staging
+git reset HEAD --
+
+#creating/adding a new branch
+git branch NAMEOFBRANCH
+
+#switch to another branch
+git branch NAMEOFBRANCH
+
+#checking the list of branches available
+git branch
+
+#merging with master - go to master branch first and than run below
+git merge NAMEOFBRANCH
+
+#adding a new project to the github after you have added and commmitted locally and created a new project on github
+#basically means mapping origin to the url
+git remote add origin NAMEOFURL
+
+#pushing the project to github for the first time after git remote add origin step
+git push -u origin master
+
+#cloning a new project
+git clone NAMEOFURL
+
+#delete branch locally
+git branch -d NAMEOFBRANCH
+
+#pulling all the changes into local drive after cloning
+git pull
+
+#pushing new branch to the repositary - first checkout the branch then run the below
+git push origin NAMEOFBRANCH
+
+#pushing master to repositary (after first time)
+git push
+
+#pull updated master into a branch - first checkout on the branch then run the below
+git merge master
+
+#pull new branch from repositary into local
+git pull
+git checkout NAMEOFBRANCH
+
+
+# I think this only needs to be done when new PC before work can be commited into git
+git config --global user.email "EMAILADDRESS"
+git config --global user.name "NAME"
+
+
+
+
+
+
+
+
+
